@@ -17,23 +17,37 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <div className="heading">
-        <h1>To-Do List</h1>
+    <div>
+      <div className="container">
+        <div className="heading">
+          <h1>To-Do List</h1>
+        </div>
+        <div className="form">
+          <input type="text" onChange={handleChange} value={inputText} />
+          <button onClick={addItem}>
+            <span>Add</span>
+          </button>
+        </div>
+        <div>
+          <ul>
+            {listItem.map((todoItem, index) => (
+              <li key={index}>{todoItem}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="form">
-        <input type="text" onChange={handleChange} value={inputText} />
-        <button onClick={addItem}>
-          <span>Add</span>
-        </button>
-      </div>
-      <div>
-        <ul>
-          {listItem.map((todoItem, index) => (
-            <li key={index}>{todoItem}</li>
-          ))}
-        </ul>
-      </div>
+      <footer>
+        <p>
+          created by{" "}
+          <a href="" className="decoration-none">
+            Akhmad Nuryasin
+          </a>
+        </p>
+        <p>with the enthusiasm of</p>
+        <a href="" className="decoration-none">
+          Icah Alifah
+        </a>
+      </footer>
     </div>
   );
 }

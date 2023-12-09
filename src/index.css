@@ -77,3 +77,14 @@ li {
   position: relative;
   padding: 0.5rem;
 }
+
+footer {
+  font-size: 0.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.decoration-none {
+  text-decoration: none;
+  color: rgb(59, 56, 56);
+}
