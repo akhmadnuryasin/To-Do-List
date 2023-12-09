@@ -38,13 +38,19 @@ function App() {
       </div>
       <footer>
         <p>
-          created by{" "}
-          <a href="" className="decoration-none">
+          created by
+          <a
+            href="https://instagram.com/akhmadnuryasin_171?igshid=MzMyNGUyNmU2YQ=="
+            className="decoration-none"
+          >
             Akhmad Nuryasin
           </a>
         </p>
         <p>with the enthusiasm of</p>
-        <a href="" className="decoration-none">
+        <a
+          href="https://instagram.com/icah_alifah?igshid=MzMyNGUyNmU2YQ=="
+          className="decoration-none"
+        >
           Icah Alifah
         </a>
       </footer>
